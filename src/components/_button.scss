@@ -5,7 +5,7 @@
 .emby-button, .skipIntro {
 	position: relative;
 	&[is="emby-button"]:not(.emby-tab-button),
-	&.raised[is="emby-linkbutton"]:not(.emby-tab-button).
+	&.raised[is="emby-linkbutton"]:not(.emby-tab-button),
 	&.skipIntro {
 		background: ab.$background-dark;
 		border-radius: 100vh;
