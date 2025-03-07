@@ -20,14 +20,14 @@ body #itemDetailPage {
 		font-size: 0 !important;
 	}
 	.detailLogo {
-		left: 18.8vw;
-		top: 17.5vh;
-		height: 30vh;
+		left: 35vw;
+		top: 6vh;
+		height: 18vh;
 		background-position: left bottom !important;
 	}
 	&:has(.itemName.subtitle) {
 		.detailLogo {
-			top: 9.5vh;
+			top: 0;
 		}
 	}
 	.nameContainer .parentName {
