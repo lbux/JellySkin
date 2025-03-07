@@ -2,10 +2,11 @@
 
 @use "../abstract/variables" as ab;
 
-.emby-button {
+.emby-button, .skipIntro {
 	position: relative;
 	&[is="emby-button"]:not(.emby-tab-button),
-	&.raised[is="emby-linkbutton"]:not(.emby-tab-button) {
+	&.raised[is="emby-linkbutton"]:not(.emby-tab-button).
+	&.skipIntro {
 		background: ab.$background-dark;
 		border-radius: 100vh;
 		overflow: hidden;
@@ -43,9 +44,6 @@
 // Skip Intro
 
 .skipIntro {
-	background: ab.$background-dark !important;
-	border-radius: 100vh;
-	overflow: hidden;
 	bottom: 12em;
 	color: white !important;
 	border: none;
@@ -57,18 +55,7 @@
 	&:hover {
 		box-shadow: 0 0 15px black !important;
 	}
-	&::after {
-		content: "";
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		top: 0;
-		left: 0;
-		background: ab.$gradient-default;
-		z-index: 0;
-		opacity: 0;
-		transition: opacity ab.$transition-time-fast-1 linear;
-	}
+	
 	.paper-icon-button-light {
 		z-index: 1;
 		color: white !important;
