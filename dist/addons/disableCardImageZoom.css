@@ -1,0 +1,6 @@
+/** @format */
+.card:hover .cardImageContainer::after, .card:focus-visible .cardImageContainer::after {
+  transform: scale(1) !important;
+}
+
+/*# sourceMappingURL=disableCardImageZoom.css.map */

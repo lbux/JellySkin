@@ -1,0 +1,11 @@
+/** @format */
+* {
+  backdrop-filter: none !important;
+}
+
+.mainDrawer,
+.dialog {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+/*# sourceMappingURL=removeBackdropFilter.css.map */
